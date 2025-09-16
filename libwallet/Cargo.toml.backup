@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc_wallet_libwallet"
+name = "grin_wallet_libwallet"
 version = "4.4.0"
 authors = ["Grin Developers <mimblewimble@lists.launchpad.net>"]
 description = "Simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
@@ -50,29 +50,29 @@ crc = "1.8"
 maplit = "1.0"
 num-bigint = "0.2"
 
-cs_mwc-libp2p = { version = "0.35.3", git = "https://github.com/cypherstack/rust-libp2p", branch = "mirror", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
+libp2p = { git = "https://github.com/mwcproject/rust-libp2p", branch = "master", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
 #libp2p = { path = "../../rust-libp2p", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
 tokio = { version = "0.2.1", features = ["full"] }
 futures-timer = "3.0.2"
 crossbeam-utils = "0.7"
-cs_mwc-bitcoin = { version = "0.27.1", git = "https://github.com/cypherstack/rust-bitcoin", branch = "zkp", features = ["bitcoinconsensus"] }
+bitcoin = { version = "0.26", git = "https://github.com/mwcproject/rust-bitcoin", branch = "zkp", features = ["bitcoinconsensus"] }
 #bitcoin = { version = "0.26", path = "../../rust-bitcoin", features = ["bitcoinconsensus"] }
 bitcoin_hashes = { version = "0.9.1", features = ["serde"] }
-cs_mwc-bch = { version = "0.2.0", git = "https://github.com/cypherstack/rust-bch", branch = "mirror" }
+bch = { git = "https://github.com/mwcproject/rust-bch", branch = "master" }
 #bch = { path = "../../rust-bch" }
 #web3 = { version = "0.15.0", default-features = false, features = ["ws-tls-async-std", "signing"] }
-cs_mwc-web3 = { version = "0.15.0", git = "https://github.com/cypherstack/rust-web3", branch = "mirror",  default-features = false, features = ["ws-tls-async-std", "signing"] }
+web3 = { git = "https://github.com/mwcproject/rust-web3", branch = "master",  default-features = false, features = ["ws-tls-async-std", "signing"] }
 secp256k1 = { version = "0.20.1", features = ["rand"]}
 #ether-converter = "0.1.3"
 bigdecimal = "0.4.2"
-cs_mwc-wagyu-ethereum = { version = "0.6.3", git = "https://github.com/cypherstack/wagyu-ethereum", branch = "mirror" }
-cs_mwc-wagyu-model = { version = "0.6.3", git = "https://github.com/cypherstack/wagyu-model", branch = "mirror" }
-cs_mwc-zcash_primitives = { version = "0.4.0", git = "https://github.com/cypherstack/librustzcash", branch = "mirror", features = ["transparent-inputs"] }
+wagyu-ethereum = { git = "https://github.com/mwcproject/wagyu-ethereum", branch = "master" }
+wagyu-model = { git = "https://github.com/mwcproject/wagyu-model", branch = "master" }
+zcash_primitives = { version = "0.4.0", git = "https://github.com/mwcproject/librustzcash", branch = "master", features = ["transparent-inputs"] }
 #zcash_primitives = { path = "../../librustzcash/zcash_primitives", features = ["transparent-inputs"] }
 
 
-mwc_wallet_util = { package = "cs_mwc_wallet_util", path = "../util", version = "4.4.0" }
-mwc_wallet_config = { package = "cs_mwc_wallet_config", path = "../config", version = "4.4.0" }
+grin_wallet_util = { path = "../util", version = "4.4.0" }
+grin_wallet_config = { path = "../config", version = "4.4.0" }
 
 [target.'cfg(any(target_os = "android", target_os = "linux"))'.dependencies]
 libc = { version = "0.2.69", default-features = false }

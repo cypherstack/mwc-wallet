@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc_wallet_controller"
+name = "grin_wallet_controller"
 version = "4.4.0"
 authors = ["Grin Developers <mimblewimble@lists.launchpad.net>"]
 description = "Controllers for grin wallet instantiation"
@@ -32,12 +32,12 @@ lazy_static = "1"
 colored = "1.6"
 x25519-dalek = "0.6"
 ed25519-dalek = "1.0.0-pre.4"
-cs_mwc-wagyu-ethereum = { version = "0.6.3", git = "https://github.com/cypherstack/wagyu-ethereum", branch = "mirror" }
-cs_mwc-libp2p = { version = "0.35.3", git = "https://github.com/cypherstack/rust-libp2p", branch = "mirror", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
+wagyu-ethereum = { git = "https://github.com/mwcproject/wagyu-ethereum", branch = "master" }
+libp2p = { git = "https://github.com/mwcproject/rust-libp2p", branch = "master", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
 #libp2p = { path = "../../rust-libp2p", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
 
-mwc_wallet_util = { package = "cs_mwc_wallet_util", path = "../util", version = "4.4.0" }
-mwc_wallet_api = { package = "cs_mwc_wallet_api", path = "../api", version = "4.4.0" }
-mwc_wallet_impls = { package = "cs_mwc_wallet_impls", path = "../impls", version = "4.4.0" }
-mwc_wallet_libwallet = { package = "cs_mwc_wallet_libwallet", path = "../libwallet", version = "4.4.0" }
-mwc_wallet_config = { package = "cs_mwc_wallet_config", path = "../config", version = "4.4.0" }
+grin_wallet_util = { path = "../util", version = "4.4.0" }
+grin_wallet_api = { path = "../api", version = "4.4.0" }
+grin_wallet_impls = { path = "../impls", version = "4.4.0" }
+grin_wallet_libwallet = { path = "../libwallet", version = "4.4.0" }
+grin_wallet_config = { path = "../config", version = "4.4.0" }

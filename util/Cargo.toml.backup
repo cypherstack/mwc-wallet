@@ -1,5 +1,5 @@
 [package]
-name = "cs_mwc_wallet_util"
+name = "grin_wallet_util"
 version = "4.4.0"
 authors = ["Grin Developers <mimblewimble@lists.launchpad.net>"]
 description = "Util, for generic utilities and to re-export grin crates"
@@ -29,13 +29,13 @@ failure_derive = "0.1"
 #grin_p2p = { git = "https://github.com/mwcproject/mwc-node", tag = "4.4.3" }
 
 # For bleeding edge
-cs_mwc_core = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_keychain = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_chain = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_util = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_api = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_store = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_p2p = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_core = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_keychain = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_chain = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_util = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_api = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_store = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
+grin_p2p = { git = "https://github.com/mwcproject/mwc-node", branch = "master" }
 
 # For local testing
 #grin_core = { path = "../../mwc-node/core"}

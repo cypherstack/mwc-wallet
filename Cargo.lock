@@ -496,7 +496,7 @@ checksum = "349f9b6a179ed607305526ca489b34ad0a41aed5f7980fa90eb03160b69598fb"
 
 [[package]]
 name = "bitcoin"
-version = "0.26.0"
+version = "0.27.1"
 source = "git+https://github.com/mwcproject/rust-bitcoin?branch=zkp#98b1412e3704848370d23ce7d37b5f93b83ddbad"
 dependencies = [
  "bech32 0.7.3",
@@ -3854,7 +3854,7 @@ dependencies = [
 
 [[package]]
 name = "object"
-version = "0.26.0"
+version = "0.27.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c55827317fb4c08822499848a14237d2874d6f139828893017237e7ab93eb386"
 dependencies = [
