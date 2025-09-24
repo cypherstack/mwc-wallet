@@ -28,14 +28,15 @@ failure_derive = "0.1"
 #grin_store = { git = "https://github.com/mwcproject/mwc-node", tag = "4.4.3" }
 #grin_p2p = { git = "https://github.com/mwcproject/mwc-node", tag = "4.4.3" }
 
-# For bleeding edge
-cs_mwc_core = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_keychain = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_chain = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_util = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_api = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_store = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
-cs_mwc_p2p = { version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+# For bleeding edge - use grin_* names to match lib.rs re-exports
+grin_core = { package = "cs_mwc_core", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_keychain = { package = "cs_mwc_keychain", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_chain = { package = "cs_mwc_chain", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_util = { package = "cs_mwc_util", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_api = { package = "cs_mwc_api", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_store = { package = "cs_mwc_store", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+grin_p2p = { package = "cs_mwc_p2p", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
+
 
 # For local testing
 #grin_core = { path = "../../mwc-node/core"}

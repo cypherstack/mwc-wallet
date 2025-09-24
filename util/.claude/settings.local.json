@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/user/src/ai/crates/mwc-wallet/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

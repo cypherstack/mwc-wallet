@@ -1,0 +1,7 @@
+[package]
+name = "mwc_util"
+version = "5.3.9"
+edition = "2018"
+
+[dependencies]
+cs_mwc_util = { package = "cs_mwc_util", version = "5.3.9", git = "https://github.com/cypherstack/mwc-node", branch = "mirror" }
