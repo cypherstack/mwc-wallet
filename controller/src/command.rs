@@ -149,7 +149,7 @@ where
 	let mut w_lock = owner_api.wallet_inst.lock();
 	let p = w_lock.lc_provider()?;
 	let m = p.get_mnemonic(None, args.passphrase, wallet_data_dir)?;
-	mwc_wallet_impls::lifecycle::show_recovery_phrase(m);
+	// mwc_wallet_impls::lifecycle::show_recovery_phrase(m);
 	Ok(())
 }
 
